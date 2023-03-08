@@ -7,7 +7,16 @@ Autenticacion a traves de passport con JWT.
 Primero debemos crear un archivo en la raíz proyecto con el nombre `.env` con el siguiente contenido:
 ```
 PORT=8080
-ENV=local
+NODE_ENV=development
+MONGODB_URI='mongodb://localhost:27017/'
+PERSISTENCE_TYPE=mongo
+PRODUCTS_FILE_PATH='db/products.db'
+CARTS_FILE_PATH='db/carts.db'
+MESSAGES_FILE_PATH='db/messages.db'
+NODEMAILER_TRANSPORT_HOST='smtp.ethereal.email'
+NODEMAILER_TRANSPORT_PORT=587
+NODEMAILER_TRANSPORT_MAIL='email@ethereal.email'
+NODEMAILER_TRANSPORT_PASS='pass'
 ```
 Acá estamos configurando una variable de entorno para nuestro proyecto las cuales se especifican a continuación:
 | VARIABLE | VALOR DEFAULT | DESCRIPCIÓN |
